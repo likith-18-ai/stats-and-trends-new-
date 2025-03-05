@@ -7,7 +7,6 @@ You should NOT change any function, file or variable names,
 Make use of the functions presented in the lectures
 and ensure your code is PEP-8 compliant, including docstrings.
 """
-
 import matplotlib.pyplot as plt
 import numpy as np
 import pandas as pd
@@ -89,7 +88,7 @@ def writing(moments, col):
 
 def main():
     """Main function to load data, process it, generate plots, and perform analysis."""
-    df = pd.read_csv('dummy_data.csv')
+    df = pd.read_csv('data.csv')
     df = preprocessing(df)
     col = 'time_spent'
     plot_relational_plot(df)
