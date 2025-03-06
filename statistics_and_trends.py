@@ -70,7 +70,7 @@ def preprocessing(df):
     print("\nData Summary:\n", df.describe())
     print("\nFirst Five Rows:\n", df.head())
     numeric_df = df.select_dtypes(include=["int64", "float64"])
-    print("\nCorrelation Matrix:\n", numeric_df.corr())      
+    print("\nCorrelation Matrix:\n", numeric_df.corr())  # Numeric columns only    
     return df
 
 
